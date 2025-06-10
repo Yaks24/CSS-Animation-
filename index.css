@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     background-color: rgb(4, 4, 27);
     color: white;
     font-family: 'Poppins';
     width: 100%;
+    overflow-x: hidden;
 }
 p {
     margin: 0;
@@ -19,21 +26,24 @@ p {
     /* position: fixed; */
     width: 100%;
     padding: 1em;
+    background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   }
   
   .head{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
-    top: 1em;
-    left: 1em;
-    right: 1em;
+    /* position: fixed; */
+    /* top: 1em; */
+    /* left: 1em; */
+    /* right: 1em; */
   
   }
   .head button{
-    padding: 1em;
-    border-radius: 3em;
+    padding: 8px;
+    border-radius: 12px;
+    border-style: solid;
      background: linear-gradient(rgb(64, 64, 179), rgb(101, 101, 219));
      border-style: solid;
   }
@@ -49,7 +59,7 @@ p {
     text-align: center;
     animation-name: disappear;
     animation-duration: 3s;
-animation-iteration-count: infinite;
+/* animation-iteration-count: infinite; */
   }
   @keyframes disappear{
     from {
@@ -102,7 +112,7 @@ animation-iteration-count: infinite;
   }
 
   .third{
-    width: 100%;
+    padding: 1em;
     animation-name: appear;
     animation-duration: 2s;
     /* animation-iteration-count: infinite; */
@@ -126,8 +136,9 @@ animation-iteration-count: infinite;
 
   .inner-div-1{
     animation-name: box1;
-    animation-duration: 5s;
+    animation-duration: 2s; 
     /* animation-iteration-count: infinite; */
+    animation-delay: 3s;
   }
 @keyframes box1{
   from {
@@ -137,8 +148,9 @@ animation-iteration-count: infinite;
 }
 .inner-div-2{
   animation-name: box2;
-  animation-duration: 3s;
+  animation-duration: 2s; 
   /* animation-iteration-count: infinite; */
+  animation-delay: 2s;
 }
 @keyframes box2{
   from {
@@ -148,8 +160,9 @@ animation-iteration-count: infinite;
 
 .inner-div-3{
   animation-name: box3;
-  animation-duration: 5s;
+  animation-duration: 2s;
   /* animation-iteration-count: infinite; */
+  animation-delay: 3s;
 }
 @keyframes box3{
   from {
@@ -299,8 +312,51 @@ animation-iteration-count: infinite;
   margin: .5em 0;
   color: white;
 }
+
+.second-trio{
+  animation-name: fifth-sec;
+  animation-duration: 3s;
+}
+
+@keyframes fifth-sec{
+ from {
+  transform: scale(0);
+ }
+}
+
+.third-trio{
+  animation-name: fifth-sec-1;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes fifth-sec-1{
+  from {
+    transform: scale(0);
+  }
+}
+
+.fourth-trio {
+  animation-name: fifth-sec-2;
+  animation-duration: 3s;
+}
+
+@keyframes fifth-sec-2 {
+  from {
+    transform: scale(0);
+  }
+}
+
 .sixth{
     margin-top: 8em;
+    animation-name: sixth-sec;
+    animation-duration: 1s;
+}
+
+@keyframes sixth-sec {
+  from {
+    transform: scale(0);
+  }
 }
 .sixth .text-1, .sixth .text-2{
     text-align: center;
@@ -326,6 +382,71 @@ animation-iteration-count: infinite;
     padding: 0 2em;
 }
     */
+
+.first-box{
+  animation-name: first-box;
+  animation-duration: 1s;
+}
+
+@keyframes first-box{
+  from{
+    transform: scale(0);
+  }
+}
+
+.secondd-box{
+  animation-name: secondd-box;
+  animation-duration: 1s;
+  animation-delay: 1s;
+
+}
+
+@keyframes secondd-box{
+  from{
+    transform: scale(0);
+  }
+}
+
+
+.thirdd-box{
+  animation-name: thirdd-box;
+  animation-duration: 1s;
+  animation-delay: 2s;
+
+}
+
+@keyframes thirdd-box{
+  from{
+    transform: scale(0);
+  }
+}
+
+.fourth-box{
+  animation-name: fourth-box;
+  animation-duration: 1s;
+  animation-duration: 3s;
+
+}
+
+@keyframes fourth-box{
+  from{
+    transform: scale(0);
+  }
+}
+
+.fifth-box{
+  animation-name: fifth-box;
+  animation-duration: 1s;
+  animation-duration: 4s;
+
+}
+
+@keyframes fifth-box{
+  from{
+    transform: scale(0);
+  }
+}
+
 .para-1{
     margin-top: 1em;
     font-weight: bold;
